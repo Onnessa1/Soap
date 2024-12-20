@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width:100%;
+    max-width:1920px;
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+body > main > header{
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    max-width:1920px;
+    flex-direction: column;
+    background: url('/site/img/image 1.svg');
+    min-height:970px;
+}
+body > main > header > nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    max-width: 1800px;
+}
+body > main > header > nav > ul{
+    width:100%;
+    max-width:300px;
+}
+body > main > header > nav > ul > li{
+    display: inline-block;
+    margin-right:1%;
+}
+body > main > header > nav > div:nth-child(3) > span{
+    background: white;
+    width:30px;
+    height:3px;
+    display:block;
+}
+body > main > header > nav > div:nth-child(3) > span:nth-child(2){
+    margin-top:15px;
+    margin-bottom:15px;
+}
+body > main > header > section{
+    width:100%;
+    max-width:1800px;
+}
+.center{
+    width:100%;
+    max-width: 663px;
+    min-height: 430px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top:3%;
+    margin-bottom:3%;
+}
+.center > h1{
+    font-size:70px;
+}
+.center > p{
+    font-size: 25px;
+}
+.center > button{
+    width:299px;
+    height:75px;
+    background-color: #97DCE2;
+    border-radius: 27px;
+    border: 1px solid #270101;
+    font-size:25px;
+}
+@media(max-width:500px){
+    .center > h1{
+        font-size:30px;
+    }
+    .center > p{
+        font-size: 20px;
+    }
+    .center{
+        justify-content: space-around;
+    }
+}
+
+body > main:nth-child(1) > header:nth-child(1) > div:nth-child(3){
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width:100%;
+    max-width:1800px;
+    color:black;
+    margin-bottom: 35px;
+    flex-wrap:wrap;
+}
