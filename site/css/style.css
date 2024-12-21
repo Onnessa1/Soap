@@ -19,7 +19,7 @@ body > main > header{
     width:100%;
     max-width:1920px;
     flex-direction: column;
-    background: url('site/img/image 1.svg');
+    background: url('../../site/img/image 1.svg');
     min-height:970px;
 }
 body > main > header > nav{
