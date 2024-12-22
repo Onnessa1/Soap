@@ -109,6 +109,7 @@ body > main > header > div:nth-child(3) > div:nth-child(2) > picture{
     position: relative;
     display:flex;
     margin-top:24px;
+    margin-bottom: 3%j;
 }
 
 body > main > header > div:nth-child(3) > div:nth-child(2) > picture > span:nth-child(2){
@@ -129,7 +130,18 @@ body > main > header > div:nth-child(3) > div:nth-child(2) > picture > span:nth-
     display:flex;
     justify-content: space-between;
 } */
+body > main > header > div:nth-child(3) > div:nth-child(2){
+    display:flex;
+    width:100%;
+    max-width: 1200px;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+body > main > header > div:nth-child(3) > div:nth-child(2) > picture{
+    margin-left:3%;
 
+}
 .secondSlide{
     width:100%;
     max-width:1920px;
