@@ -107,7 +107,8 @@ body > main > header > div:nth-child(3){
 }
 body > main > header > div:nth-child(3) > div:nth-child(2) > picture{
     position: relative;
-
+    display:flex;
+    margin-top:24px;
 }
 
 body > main > header > div:nth-child(3) > div:nth-child(2) > picture > span:nth-child(2){
@@ -137,6 +138,10 @@ body > main > header > div:nth-child(3) > div:nth-child(2) > picture > span:nth-
     justify-content: center;
     align-items: center;
     flex-wrap:wrap;
+}
+.secondSlide > img{
+    width:100%;
+    max-width:873px;
 }
 .secondSlide > div{
     width:100%;
@@ -168,6 +173,11 @@ body > main > header > div:nth-child(3) > div:nth-child(2) > picture > span:nth-
 }
 .thirtySlide > div > h2{
     font-size: 47px;
+}
+@media(max-width:500px){
+    .thirtySlide > div > h2{
+        font-size:30px;
+    }
 }
 .thirtySlide > div > div{
     display:flex;
