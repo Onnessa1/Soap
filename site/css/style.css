@@ -166,6 +166,20 @@ body > main > header > div:nth-child(3) > div:nth-child(2) > picture{
     max-width:471px;
     min-height:470px;
 }
+.secondSlide > div > button{
+    width:277px;
+    height:75px;
+    background: none;
+    border-radius: 27px;
+    color: #F4C623;
+    border:2px solid #F4C623;
+    font-size: 25px;
+}
+div.secondSlide:nth-child(3) > div > button{
+    background-color: #97DCE2;
+    color:black;
+    border:none;
+}
 
 .thirtySlide{
     text-shadow: 1px 1px white;
@@ -190,6 +204,13 @@ body > main > header > div:nth-child(3) > div:nth-child(2) > picture{
     .thirtySlide > div > h2{
         font-size:30px;
     }
+    .secondSlide{
+        height:555px;
+        min-height:555px;
+    }
+    .secondSlide > div{
+        min-height: 170px;
+    }
 }
 .thirtySlide > div > div{
     display:flex;
@@ -209,9 +230,19 @@ body > main > header > div:nth-child(3) > div:nth-child(2) > picture{
 }
 
 footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     background-color: #F8F8F8;
     width:100%;
     max-width:1920px;
     min-height:203px;
 }
-
+footer > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    max-width:1800px;
+    flex-wrap:wrap;
+}
