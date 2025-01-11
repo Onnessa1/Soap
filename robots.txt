@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://onnessa1.github.io/sitemap.xml
+Sitemap: https://onnessa1.github.io/Soap/sitemap.xml
