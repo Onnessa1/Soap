@@ -1,14 +1,19 @@
-
-document.querySelector('#button').addEventListener('click',CallWatsApp);
-function CallWatsApp(){
-    window.location.href=`https://wa.clck.bar/77477064857`;
+let path = ' ';
+if(window.location.pathname=='/Soap/'||window.location.pathname=='/var/www/html/Soap/index.html'){
+    document.querySelector('#button').addEventListener('click',CallWatsApp);
+    function CallWatsApp(){
+        window.location.href=`https://wa.clck.bar/77477064857`;
+    }
+}else{
+    path='../';
 }
 
+
 function menuOpen(){
-    const menu=new Promise((resolve)=>{
+    return new Promise((resolve)=>{
         function openMenu(){
             const firstOpen=document.createElement('script');
-            firstOpen.src='site/js/menu.js';
+            firstOpen.src=`${path}`+'site/js/menu.js';
             document.querySelector('body').append(firstOpen);
         }
         resolve(openMenu());
