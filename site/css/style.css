@@ -280,3 +280,63 @@ footer > div{
     color:orange;
     text-decoration: none;
 }
+
+
+
+.benefits {
+  text-align: center;
+  padding: 60px 5%;
+  background: #f9faf6;
+}
+.benefit-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.benefit-list div {
+  max-width: 200px;
+}
+.benefit-list img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+
+/* body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #fffefb;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header nav {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+  padding: 10px 5%;
+}
+
+header nav ul li a:hover {
+  color: #FF5C00;
+  text-decoration: underline;
+}
+
+button {
+  background: linear-gradient(90deg, #89AB03, #03DEDE);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+} */
