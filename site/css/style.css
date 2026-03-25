@@ -7,6 +7,10 @@ body {
 }
 
 /* HEADER */
+header{
+    background: url("../../site/img/image 1.svg");
+    background-position: center center;
+}
 header nav {
     display: flex;
     justify-content: space-between;
@@ -42,7 +46,7 @@ header .menu-list li a:hover {
 /* Banner */
 .banner {
     height: 100vh;
-    background: url('site/img/banner.jpg') center/cover no-repeat;
+    background: url('../../site/img/banner.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -271,4 +275,11 @@ header .menu-list {
     background-color: #03DEDE;
     border-radius: 2px;
   }
+}
+
+
+.benefit-list > div > img{
+    width:200px;
+    height:270px;
+    object-fit: cover;
 }
