@@ -1,0 +1,31 @@
+.openMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 1000;
+}
+
+.openMenu.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.openMenu h3 {
+  margin: 15px 0;
+  font-size: 1.5em;
+}
+
+.openMenu h3 a {
+  text-decoration: none;
+  color: #03DEDE;
+}
