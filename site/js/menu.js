@@ -1,28 +1,40 @@
+// Создаем элементы меню и фон
+const menuOverlay = document.createElement('div');
+menuOverlay.classList.add('menu-overlay');
+document.body.append(menuOverlay);
+
+const mobileMenu = document.createElement('div');
+mobileMenu.classList.add('mobile-menu');
+mobileMenu.innerHTML = `
+    <div class="close-menu">&times;</div>
+    <a href="#catalog">Каталог</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#contacts">Контакты</a>
+    <a href="tel:+77477064857">+7 747 706 4857</a>
+`;
+document.body.append(mobileMenu);
+
+// Функция открыть меню
 document.querySelector('#menu').addEventListener('click', () => {
-    // Если меню уже есть, ничего не делаем
-    if(document.querySelector('.openMenu')) return;
+    console.log('oK')
+    mobileMenu.classList.add('show');
+    menuOverlay.classList.add('show');
+});
 
-    const itSmenu = `
-        <h3><a href='#catalog'>Каталог</a></h3>
-        <h3><a href='#reviews'>Отзовы</a></h3>
-        <h3><a href='#contacts'>Контакты</a></h3>
-        <h3><a href='tel:+77477064857'>+7 747 706 4857</a></h3>
-    `;
+// Закрытие меню по клику на X
+mobileMenu.querySelector('.close-menu').addEventListener('click', () => {
+    mobileMenu.classList.remove('show');
+    menuOverlay.classList.remove('show');
+});
 
-    const okCreate = document.createElement('div');
-    okCreate.classList.add('openMenu');
-    okCreate.innerHTML = itSmenu;
-    document.body.append(okCreate);
+// Закрытие меню по клику на фон
+menuOverlay.addEventListener('click', () => {
+    mobileMenu.classList.remove('show');
+    menuOverlay.classList.remove('show');
+});
 
-    // Анимируем появление
-    requestAnimationFrame(() => {
-        okCreate.classList.add('show');
-    });
-
-    // Закрытие при клике на меню
-    okCreate.addEventListener('click', () => {
-        okCreate.classList.remove('show');
-        // После окончания анимации удаляем элемент
-        okCreate.addEventListener('transitionend', () => okCreate.remove(), { once: true });
-    });
+document.querySelector('.mobile-menu').addEventListener('click',()=>{
+    console.log('111')
+    mobileMenu.classList.remove('show');
+    menuOverlay.classList.remove('show');
 });
