@@ -281,7 +281,7 @@ header .menu-list {
 .benefit-list > div > img{
     width:200px;
     height:270px;
-    object-fit: cover;
+    /* object-fit: cover; */
     border-radius:17px;
     border:#03DEDE 3px solid;
 }
