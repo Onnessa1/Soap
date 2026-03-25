@@ -16,7 +16,6 @@ document.body.append(mobileMenu);
 
 // Функция открыть меню
 document.querySelector('#menu').addEventListener('click', () => {
-    console.log('oK')
     mobileMenu.classList.add('show');
     menuOverlay.classList.add('show');
 });
@@ -34,7 +33,6 @@ menuOverlay.addEventListener('click', () => {
 });
 
 document.querySelector('.mobile-menu').addEventListener('click',()=>{
-    console.log('111')
     mobileMenu.classList.remove('show');
     menuOverlay.classList.remove('show');
 });

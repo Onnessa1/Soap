@@ -7,10 +7,7 @@ body {
 }
 
 /* HEADER */
-header{
-    background: url("../../site/img/image 1.svg");
-    background-position: center center;
-}
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -46,7 +43,7 @@ header .menu-list li a:hover {
 /* Banner */
 .banner {
     height: 100vh;
-    background: url('../../site/img/banner.jpg') center/cover no-repeat;
+    background: url('../../site/img/banner.avif') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,7 +55,7 @@ header .menu-list li a:hover {
 .banner h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px  rgba(0,0,0,0.5), 3px 3px 3px #03DEDE;
 }
 
 .banner p {
@@ -75,6 +72,7 @@ header .menu-list li a:hover {
     font-size: 1.2em;
     cursor: pointer;
     transition: 0.3s;
+    text-shadow: 1px 1px black;
 }
 
 .banner button:hover {
@@ -284,4 +282,7 @@ header .menu-list {
     /* object-fit: cover; */
     border-radius:17px;
     border:#03DEDE 3px solid;
+}
+.center > p:nth-child(2){
+    text-shadow: 2px 2px black, 3px 3px 7px #03DEDE;
 }
